@@ -23,12 +23,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
   };
 
   return (
-    <div className="pt-24 min-h-screen bg-slate-50">
+    <div className="pt-24 min-h-screen bg-orange-50/30">
       
       {/* Header Banner */}
-      <div className="bg-slate-950 text-white py-16 relative overflow-hidden border-b border-orange-500/20">
+      <div className="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 text-white py-16 relative overflow-hidden border-b border-orange-600 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex items-center gap-2 text-xs font-mono font-bold text-orange-400 mb-3 uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-xs font-mono font-bold text-orange-100 mb-3 uppercase tracking-wider">
             <button onClick={() => onNavigate('home')} className="hover:text-white transition-colors">
               Home
             </button>
@@ -37,9 +37,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white font-heading">
-            CONNECT WITH <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 bg-clip-text text-transparent">OSHO CROP CARE</span>
+            CONNECT WITH <span className="text-amber-200">OSHO CROP CARE</span>
           </h1>
-          <p className="text-slate-300 text-base sm:text-lg mt-3 max-w-2xl font-light">
+          <p className="text-orange-50 text-base sm:text-lg mt-3 max-w-2xl font-light">
             Have questions about formulation dosage, dealership inquiries, or crop defense advisory? Our technical team is ready to assist you.
           </p>
         </div>
@@ -50,61 +50,61 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           
           {/* Contact Details Card */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="bg-slate-950 text-white p-8 rounded-3xl border border-slate-800 shadow-2xl space-y-6">
+            <div className="bg-white text-slate-900 p-8 rounded-3xl border border-orange-200 shadow-2xl space-y-6">
               
-              <div className="flex items-center gap-2 text-xs font-mono font-bold text-orange-400 uppercase tracking-wider">
+              <div className="flex items-center gap-2 text-xs font-mono font-bold text-orange-600 uppercase tracking-wider">
                 <ShieldCheck className="w-4 h-4" />
                 <span>CORPORATE HEADQUARTERS</span>
               </div>
 
-              <h2 className="text-2xl font-extrabold text-white font-heading">
+              <h2 className="text-2xl font-extrabold text-slate-900 font-heading">
                 OSHO CROP CARE PVT. LTD.
               </h2>
 
-              <div className="space-y-6 pt-4 border-t border-slate-800 text-xs sm:text-sm text-slate-300">
+              <div className="space-y-6 pt-4 border-t border-orange-100 text-xs sm:text-sm text-slate-600">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-orange-600/20 text-orange-400 rounded-xl shrink-0 mt-1">
+                  <div className="p-3 bg-orange-100 text-orange-600 rounded-xl shrink-0 mt-1">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="text-white block font-bold mb-1">Office Address:</strong>
-                    <p className="leading-relaxed text-slate-300">
+                    <strong className="text-slate-900 block font-bold mb-1">Office Address:</strong>
+                    <p className="leading-relaxed text-slate-600">
                       {COMPANY_CONTACT_INFO.addressPlaceholder}
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-orange-600/20 text-orange-400 rounded-xl shrink-0">
+                  <div className="p-3 bg-orange-100 text-orange-600 rounded-xl shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="text-white block font-bold mb-1">Customer Helpline:</strong>
-                    <a href="tel:18004256746" className="text-orange-400 hover:underline font-extrabold text-base">
+                    <strong className="text-slate-900 block font-bold mb-1">Customer Helpline:</strong>
+                    <a href="tel:18004256746" className="text-orange-600 hover:underline font-extrabold text-base">
                       1800-425-6746 / +91 40-27170099
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-orange-600/20 text-orange-400 rounded-xl shrink-0">
+                  <div className="p-3 bg-orange-100 text-orange-600 rounded-xl shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="text-white block font-bold mb-1">Email Inquiries:</strong>
-                    <a href="mailto:info@oshocropcare.com" className="text-slate-300 hover:text-orange-400 font-mono">
+                    <strong className="text-slate-900 block font-bold mb-1">Email Inquiries:</strong>
+                    <a href="mailto:info@oshocropcare.com" className="text-slate-600 hover:text-orange-600 font-mono">
                       info@oshocropcare.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-orange-600/20 text-orange-400 rounded-xl shrink-0">
+                  <div className="p-3 bg-orange-100 text-orange-600 rounded-xl shrink-0">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="text-white block font-bold mb-1">Business Hours:</strong>
-                    <p className="text-slate-300">
+                    <strong className="text-slate-900 block font-bold mb-1">Business Hours:</strong>
+                    <p className="text-slate-600">
                       {COMPANY_CONTACT_INFO.businessHours}
                     </p>
                   </div>
@@ -115,7 +115,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* Contact Inquiry Form */}
-          <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl">
+          <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-orange-200 shadow-xl">
             
             {submitted ? (
               <div className="text-center py-12 space-y-4">
@@ -155,7 +155,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="e.g. Ramesh Kumar"
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
+                      className="w-full px-4 py-3 bg-orange-50/40 border border-orange-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
                     />
                   </div>
 
@@ -167,7 +167,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="e.g. +91 98765 43210"
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
+                      className="w-full px-4 py-3 bg-orange-50/40 border border-orange-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
                     />
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="e.g. ramesh@agrimail.com"
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
+                    className="w-full px-4 py-3 bg-orange-50/40 border border-orange-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
                   />
                 </div>
 
@@ -189,7 +189,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   <select
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
+                    className="w-full px-4 py-3 bg-orange-50/40 border border-orange-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
                   >
                     <option value="Product Inquiry / Agronomic Support">Product Inquiry / Agronomic Support</option>
                     <option value="Dealership & Distribution Application">Dealership & Distribution Application</option>
@@ -206,13 +206,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Please specify crop type, pest challenges, or distribution inquiry details..."
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
+                    className="w-full px-4 py-3 bg-orange-50/40 border border-orange-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-4 bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-700 hover:to-orange-600 text-white font-extrabold text-xs uppercase tracking-widest rounded-xl shadow-lg hover:shadow-orange-600/30 transition-all flex items-center justify-center gap-2"
+                  className="w-full py-4 bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 hover:from-orange-700 hover:to-orange-600 text-white font-extrabold text-xs uppercase tracking-widest rounded-xl shadow-lg hover:shadow-orange-600/30 transition-all flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />
                   <span>SUBMIT OFFICIAL INQUIRY</span>

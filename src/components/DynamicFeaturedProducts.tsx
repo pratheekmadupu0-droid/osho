@@ -33,11 +33,11 @@ export const DynamicFeaturedProducts: React.FC<DynamicFeaturedProductsProps> = (
   };
 
   return (
-    <section className="py-24 bg-slate-950 text-white relative overflow-hidden border-b border-slate-900">
+    <section className="py-24 bg-gradient-to-b from-white via-orange-50/30 to-white text-slate-900 relative overflow-hidden border-b border-orange-100">
       
       {/* Glow Effects */}
-      <div className="absolute top-1/3 right-10 w-96 h-96 bg-orange-600/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-96 h-96 bg-orange-200/30 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-200/25 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -45,26 +45,26 @@ export const DynamicFeaturedProducts: React.FC<DynamicFeaturedProductsProps> = (
         <ScrollReveal animation="fade-up">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div className="space-y-3 max-w-2xl">
-              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-orange-500/20 text-orange-400 border border-orange-500/30 text-xs font-mono font-bold uppercase tracking-widest backdrop-blur-md">
-                <Video className="w-4 h-4 text-orange-400 animate-pulse" />
+              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-orange-100 text-orange-700 border border-orange-200 text-xs font-mono font-bold uppercase tracking-widest backdrop-blur-md">
+                <Video className="w-4 h-4 text-orange-600 animate-pulse" />
                 <span>DYNAMIC 9:16 PRODUCT SHOWCASE</span>
               </div>
 
-              <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-heading leading-tight">
+              <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-heading leading-tight">
                 DYNAMIC PRODUCT <br />
-                <span className="bg-gradient-to-r from-orange-500 via-amber-400 to-amber-200 bg-clip-text text-transparent font-black">
+                <span className="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 bg-clip-text text-transparent font-black">
                   ACTION & PERFORMANCE
                 </span>
               </h2>
 
-              <p className="text-slate-300 text-base font-normal leading-relaxed">
+              <p className="text-slate-600 text-base font-normal leading-relaxed">
                 Watch real application efficacy videos demonstrating rapid knockdown and systemic crop protection power.
               </p>
             </div>
 
             <button
               onClick={() => onNavigate('products')}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-700 hover:to-orange-600 text-white font-extrabold text-xs uppercase tracking-widest px-6 py-3.5 rounded-xl shadow-lg hover:shadow-orange-600/30 transition-all self-start md:self-auto"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-700 hover:to-orange-600 text-white font-extrabold text-xs uppercase tracking-widest px-6 py-3.5 rounded-xl shadow-lg shadow-orange-600/20 hover:shadow-orange-600/40 transition-all self-start md:self-auto"
             >
               <span>EXPLORE ALL FORMULATIONS</span>
               <ArrowRight className="w-4 h-4" />
@@ -82,7 +82,7 @@ export const DynamicFeaturedProducts: React.FC<DynamicFeaturedProductsProps> = (
               <ScrollReveal key={product.id} animation="zoom-in" delay={idx * 200}>
                 <div
                   onClick={() => onSelectProduct(product)}
-                  className="group relative bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl hover:border-orange-500/60 transition-all duration-500 cursor-pointer"
+                  className="group relative bg-white rounded-3xl overflow-hidden border border-orange-200 shadow-xl hover:border-orange-500 hover:shadow-2xl shadow-orange-500/10 transition-all duration-500 cursor-pointer"
                 >
                   
                   {/* 9:16 Aspect Ratio Vertical Video Reel Container */}
@@ -103,7 +103,7 @@ export const DynamicFeaturedProducts: React.FC<DynamicFeaturedProductsProps> = (
                     {/* Top Floating Badge */}
                     <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-20">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-slate-700 text-white text-[10px] font-mono font-bold uppercase tracking-wider">
-                        <span className="w-2 h-2 rounded-full bg-green-500 animate-ping" />
+                        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
                         <span>9:16 ACTION REEL</span>
                       </span>
 

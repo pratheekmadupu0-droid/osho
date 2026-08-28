@@ -38,17 +38,17 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-3 sm:px-6 py-3">
       
-      {/* Dynamic Pill Navigation Bar Container */}
+      {/* Dynamic Light White & Orange Navigation Bar Container */}
       <div 
         className={`max-w-7xl mx-auto rounded-2xl transition-all duration-500 border ${
           isScrolled 
-            ? 'bg-slate-950/90 border-slate-800/90 shadow-2xl backdrop-blur-xl py-2 px-4 sm:px-6'
-            : 'bg-slate-950/75 border-slate-800/60 shadow-lg backdrop-blur-md py-3 px-4 sm:px-6'
+            ? 'bg-white/95 border-orange-200 shadow-xl shadow-orange-500/10 backdrop-blur-xl py-2 px-4 sm:px-6'
+            : 'bg-white/90 border-orange-200/80 shadow-lg shadow-orange-500/5 backdrop-blur-md py-3 px-4 sm:px-6'
         }`}
       >
         <div className="flex items-center justify-between">
           
-          {/* Brand Identity & Logo with Canvas Boxless Background Stripping */}
+          {/* Brand Identity & Logo */}
           <button 
             onClick={() => onNavigate('home')}
             className="flex items-center gap-3 group text-left focus:outline-none"
@@ -59,17 +59,17 @@ export const Header: React.FC<HeaderProps> = ({
               className="h-9 sm:h-11 w-auto transition-transform group-hover:scale-105"
             />
             <div className="flex flex-col">
-              <span className="font-extrabold text-sm sm:text-base tracking-tight text-white font-heading group-hover:text-orange-400 transition-colors">
+              <span className="font-extrabold text-sm sm:text-base tracking-tight text-slate-900 font-heading group-hover:text-orange-600 transition-colors">
                 OSHO CROP CARE
               </span>
-              <span className="text-[9px] sm:text-[10px] font-mono font-bold tracking-widest text-orange-400 uppercase">
+              <span className="text-[9px] sm:text-[10px] font-mono font-bold tracking-widest text-orange-600 uppercase">
                 PVT. LTD. • HYDERABAD
               </span>
             </div>
           </button>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-1 bg-slate-900/90 p-1.5 rounded-full border border-slate-800">
+          <nav className="hidden lg:flex items-center gap-1 bg-orange-50/80 p-1.5 rounded-full border border-orange-200/80">
             {navItems.map((item) => {
               const isActive = currentPage === item.id;
               return (
@@ -79,7 +79,7 @@ export const Header: React.FC<HeaderProps> = ({
                   className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-300 ${
                     isActive
                       ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-md shadow-orange-600/30'
-                      : 'text-slate-300 hover:text-white hover:bg-slate-800/80'
+                      : 'text-slate-700 hover:text-orange-600 hover:bg-white'
                   }`}
                 >
                   {item.label}
@@ -92,7 +92,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="hidden sm:flex items-center gap-3">
             <button
               onClick={onOpenSearch}
-              className="p-2.5 rounded-full bg-slate-900 hover:bg-orange-600 text-slate-300 hover:text-white border border-slate-800 transition-all shadow-sm"
+              className="p-2.5 rounded-full bg-orange-50 hover:bg-orange-600 text-orange-700 hover:text-white border border-orange-200 transition-all shadow-xs"
               title="Search Formulations"
               aria-label="Search Formulations"
             >
@@ -112,7 +112,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex sm:hidden items-center gap-2">
             <button
               onClick={onOpenSearch}
-              className="p-2 rounded-xl bg-slate-900 text-orange-400 border border-slate-800"
+              className="p-2 rounded-xl bg-orange-50 text-orange-600 border border-orange-200"
               aria-label="Search"
             >
               <Search className="w-4 h-4" />
@@ -120,10 +120,10 @@ export const Header: React.FC<HeaderProps> = ({
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 rounded-xl bg-slate-900 text-white border border-slate-800"
+              className="p-2 rounded-xl bg-orange-50 text-slate-900 border border-orange-200 hover:bg-orange-100"
               aria-label="Toggle mobile menu"
             >
-              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5 text-slate-800" />}
             </button>
           </div>
 
@@ -132,15 +132,15 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Mobile Drawer Overlay Menu */}
       {isMobileMenuOpen && (
-        <div className="sm:hidden fixed inset-x-3 top-20 z-50 bg-slate-950/95 border border-slate-800 rounded-3xl p-6 shadow-2xl backdrop-blur-2xl animate-fadeIn space-y-4">
-          <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-            <span className="text-xs font-mono font-bold text-orange-400 uppercase tracking-widest flex items-center gap-1.5">
+        <div className="sm:hidden fixed inset-x-3 top-20 z-50 bg-white/98 border border-orange-200 rounded-3xl p-6 shadow-2xl backdrop-blur-2xl animate-fadeIn space-y-4">
+          <div className="flex items-center justify-between border-b border-orange-100 pb-3">
+            <span className="text-xs font-mono font-bold text-orange-600 uppercase tracking-widest flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4" />
               <span>OSHO CROP CARE</span>
             </span>
             <button 
               onClick={() => setIsMobileMenuOpen(false)} 
-              className="text-slate-400 p-1 hover:text-white"
+              className="text-slate-500 p-1 hover:text-slate-900"
             >
               <X className="w-5 h-5" />
             </button>
@@ -156,8 +156,8 @@ export const Header: React.FC<HeaderProps> = ({
                 }}
                 className={`flex items-center justify-between px-4 py-3 rounded-xl text-sm font-bold text-left transition-colors ${
                   currentPage === item.id
-                    ? 'bg-orange-600 text-white shadow-md'
-                    : 'text-slate-200 hover:bg-slate-900'
+                    ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-md'
+                    : 'text-slate-700 hover:bg-orange-50'
                 }`}
               >
                 <span>{item.label}</span>
@@ -166,7 +166,7 @@ export const Header: React.FC<HeaderProps> = ({
             ))}
           </div>
 
-          <div className="pt-2 border-t border-slate-800 space-y-2">
+          <div className="pt-2 border-t border-orange-100 space-y-2">
             <button
               onClick={() => {
                 setIsMobileMenuOpen(false);

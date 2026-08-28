@@ -27,20 +27,20 @@ export const QualitySection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-white text-slate-900 border-b border-slate-200 overflow-hidden">
+    <section className="py-24 bg-orange-50/50 text-slate-900 border-b border-orange-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}
         <ScrollReveal animation="fade-up">
           <div className="max-w-3xl space-y-4 mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-mono font-bold uppercase tracking-widest">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 text-orange-700 border border-orange-200 text-xs font-mono font-bold uppercase tracking-widest">
               <Sparkles className="w-3.5 h-3.5 text-orange-600" />
               <span>QUALITY & SCIENCE</span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-heading leading-tight">
               SCIENTIFIC RIGOR & <br />
-              <span className="bg-gradient-to-r from-orange-600 to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 bg-clip-text text-transparent">
                 QUALITY ASSURANCE
               </span>
             </h2>
@@ -57,7 +57,7 @@ export const QualitySection: React.FC = () => {
             const IconComponent = item.icon;
             return (
               <ScrollReveal key={idx} animation="fade-up" delay={idx * 100}>
-                <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200/80 hover:border-orange-500 hover:bg-white hover:shadow-xl transition-all duration-300 group flex flex-col justify-between h-full relative">
+                <div className="bg-white p-8 rounded-2xl border border-orange-200/90 hover:border-orange-500 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between h-full relative shadow-sm">
                   <div className="space-y-4">
                     <div className="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-colors shadow-xs">
                       <IconComponent className="w-6 h-6" />
@@ -72,7 +72,7 @@ export const QualitySection: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="pt-6 border-t border-slate-200/60 mt-6 flex items-center justify-between text-[10px] font-extrabold text-slate-400 uppercase tracking-widest group-hover:text-orange-600 transition-colors">
+                  <div className="pt-6 border-t border-orange-100 mt-6 flex items-center justify-between text-[10px] font-extrabold text-slate-400 uppercase tracking-widest group-hover:text-orange-600 transition-colors">
                     <span>STANDARD 0{idx + 1}</span>
                     <span className="w-2 h-2 rounded-full bg-orange-500 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>

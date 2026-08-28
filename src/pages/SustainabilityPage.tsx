@@ -2,7 +2,7 @@ import React from 'react';
 import { PageType } from '../types';
 import { SustainabilitySection } from '../components/SustainabilitySection';
 import { CallToAction } from '../components/CallToAction';
-import { ChevronRight, Leaf, Droplets, Sun } from 'lucide-react';
+import { ChevronRight, Leaf, ShieldCheck, HeartHandshake } from 'lucide-react';
 
 interface SustainabilityPageProps {
   onNavigate: (page: PageType) => void;
@@ -10,11 +10,11 @@ interface SustainabilityPageProps {
 
 export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNavigate }) => {
   return (
-    <div className="pt-24 min-h-screen bg-white">
+    <div className="pt-24 min-h-screen bg-orange-50/30">
       {/* Header Banner */}
-      <div className="bg-slate-900 text-white py-12 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400 mb-3 uppercase tracking-wider">
+      <div className="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 text-white py-16 relative overflow-hidden border-b border-orange-600 shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex items-center gap-2 text-xs font-mono font-bold text-orange-100 mb-3 uppercase tracking-wider">
             <button onClick={() => onNavigate('home')} className="hover:text-white transition-colors">
               Home
             </button>
@@ -22,67 +22,67 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
             <span className="text-white">Sustainability</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
-            PROTECTING CROPS. <span className="text-emerald-400">RESPECTING TOMORROW.</span>
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white font-heading">
+            SUSTAINABLE <span className="text-amber-200 font-black">AGRICULTURE</span>
           </h1>
-          <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl font-light">
-            Our commitment to sustainable crop protection, responsible chemical dosage, and long-term soil health.
+          <p className="text-orange-50 text-base sm:text-lg mt-3 max-w-2xl font-light">
+            Empowering sustainable food production, biological crop health, and environmental stewardship across Indian agriculture.
           </p>
         </div>
       </div>
 
+      {/* Main Sustainability Component */}
       <SustainabilitySection onNavigate={onNavigate} />
 
-      {/* Sustainable Stewardship Pillars */}
-      <section className="py-20 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto space-y-3 mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100 rounded-full text-emerald-700 font-bold text-xs uppercase tracking-wider">
-              STEWARDSHIP PILLARS
-            </div>
-            <h2 className="text-3xl font-extrabold text-slate-900">
-              BALANCING YIELD & ENVIRONMENTAL RESPONSIBILITY
+      {/* Ecological Strategy Overview */}
+      <section className="py-16 bg-white border-t border-orange-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <h2 className="text-3xl font-extrabold text-slate-900 font-heading">
+              GREEN CROP PROTECTION FRAMEWORK
             </h2>
-            <p className="text-slate-600 text-xs sm:text-sm font-normal">
-              Practical eco-conscious agricultural strategies focused on field safety and resource conservation.
+            <p className="text-slate-600 text-sm">
+              Our ongoing initiatives for eco-friendly formulation, biological stimulants, and residue reduction.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm space-y-3 hover:border-emerald-300 transition-colors">
-              <div className="p-3 bg-emerald-50 text-emerald-600 rounded-lg inline-block">
-                <Leaf className="w-6 h-6" />
+            <div className="bg-orange-50/40 rounded-2xl p-6 border border-orange-200 space-y-3 shadow-xs">
+              <div className="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center">
+                <Leaf className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900">Precise Dosage Protocols</h3>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
-                Promoting targeted spray calibration and recommended water volume ratios to ensure max biological effect with minimal chemical load.
+              <h3 className="font-extrabold text-slate-900 text-lg">Bio-Organic Micro-Nutrients</h3>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Developing naturally derived plant growth promoters and organic acids to enhance root uptake without chemical soil degradation.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm space-y-3 hover:border-emerald-300 transition-colors">
-              <div className="p-3 bg-emerald-50 text-emerald-600 rounded-lg inline-block">
-                <Droplets className="w-6 h-6" />
+            <div className="bg-orange-50/40 rounded-2xl p-6 border border-orange-200 space-y-3 shadow-xs">
+              <div className="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center">
+                <ShieldCheck className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900">Rhizosphere & Soil Vitality</h3>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
-                Supporting bio-stimulants and specialty inputs that enhance root system expansion and beneficial soil microbial activity.
+              <h3 className="font-extrabold text-slate-900 text-lg">Zero-Residue Target Profiles</h3>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Adhering to strict pre-harvest interval (PHI) recommendations to safeguard harvested food grains and commercial produce.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm space-y-3 hover:border-emerald-300 transition-colors">
-              <div className="p-3 bg-emerald-50 text-emerald-600 rounded-lg inline-block">
-                <Sun className="w-6 h-6" />
+            <div className="bg-orange-50/40 rounded-2xl p-6 border border-orange-200 space-y-3 shadow-xs">
+              <div className="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center">
+                <HeartHandshake className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900">Applicator Safety & PPE</h3>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
-                Educating farm workers on safe handling practices, protective gloves, face shields, and responsible container rinsing and disposal.
+              <h3 className="font-extrabold text-slate-900 text-lg">Farmer Safety Training</h3>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Conducting field safety workshops on personal protective equipment (PPE), proper nozzle calibration, and container disposal.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Call To Action */}
       <CallToAction onNavigate={onNavigate} />
+
     </div>
   );
 };

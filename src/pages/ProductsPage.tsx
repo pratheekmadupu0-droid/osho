@@ -37,11 +37,11 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
   });
 
   return (
-    <div className="pt-24 min-h-screen bg-slate-50">
+    <div className="pt-24 min-h-screen bg-orange-50/30">
       {/* Header Banner */}
-      <div className="bg-slate-950 text-white py-16 relative overflow-hidden border-b border-orange-500/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 text-xs font-mono font-bold text-orange-400 mb-3 uppercase tracking-wider">
+      <div className="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 text-white py-16 relative overflow-hidden border-b border-orange-600 shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex items-center gap-2 text-xs font-mono font-bold text-orange-100 mb-3 uppercase tracking-wider">
             <button onClick={() => onNavigate('home')} className="hover:text-white transition-colors">
               Home
             </button>
@@ -50,9 +50,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white font-heading">
-            PRODUCT <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 bg-clip-text text-transparent">DIRECTORY</span>
+            PRODUCT <span className="text-amber-200">DIRECTORY</span>
           </h1>
-          <p className="text-slate-300 text-base sm:text-lg mt-3 max-w-2xl font-light">
+          <p className="text-orange-50 text-base sm:text-lg mt-3 max-w-2xl font-light">
             Search and filter our comprehensive catalog of insecticides, fungicides, herbicides, bio-nutritionals, and specialty crop protection solutions.
           </p>
         </div>
@@ -61,34 +61,34 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
         {/* Search & Filter Bar */}
-        <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm mb-10 space-y-6">
+        <div className="bg-white rounded-2xl p-6 border border-orange-200 shadow-md mb-10 space-y-6">
           
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="relative flex-1">
-              <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <Search className="w-4 h-4 text-orange-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search by product name, category, or target crop (e.g. Cotton, Rice, Insecticide)..."
-                className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900 transition-all"
+                className="w-full pl-10 pr-4 py-3 bg-orange-50/40 border border-orange-200 rounded-xl text-xs sm:text-sm font-medium outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-slate-900 transition-all"
               />
             </div>
 
-            <div className="flex items-center gap-2 text-xs font-bold text-slate-500">
+            <div className="flex items-center gap-2 text-xs font-bold text-slate-600">
               <Filter className="w-4 h-4 text-orange-600" />
               <span>Showing {filteredProducts.length} Formulations</span>
             </div>
           </div>
 
           {/* Category Filter Buttons */}
-          <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-100">
+          <div className="flex flex-wrap gap-2 pt-2 border-t border-orange-100">
             <button
               onClick={() => setSelectedCategory('ALL')}
               className={`px-4 py-2 rounded-lg text-xs font-bold transition-all ${
                 selectedCategory === 'ALL'
-                  ? 'bg-orange-600 text-white shadow-md'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-md'
+                  : 'bg-orange-50 text-slate-700 hover:bg-orange-100'
               }`}
             >
               ALL CATEGORIES
@@ -100,8 +100,8 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
                 onClick={() => setSelectedCategory(cat.name)}
                 className={`px-4 py-2 rounded-lg text-xs font-bold transition-all ${
                   selectedCategory === cat.name
-                    ? 'bg-orange-600 text-white shadow-md'
-                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                    ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-md'
+                    : 'bg-orange-50 text-slate-700 hover:bg-orange-100'
                 }`}
               >
                 {cat.name}
@@ -116,7 +116,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
           {filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white rounded-2xl overflow-hidden border border-orange-200/90 shadow-sm hover:shadow-2xl hover:border-orange-400 transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
                 {/* Media Container: 9:16 Video Preview if available, or Photo */}
@@ -152,42 +152,35 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
                   )}
                 </div>
 
-                {/* Body Details */}
+                {/* Content */}
                 <div className="p-6 space-y-3">
                   <h3 className="text-xl font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors">
                     {product.name}
                   </h3>
 
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed line-clamp-2">
                     {product.shortDescription}
                   </p>
 
-                  <div className="pt-2">
-                    <span className="text-[11px] font-bold uppercase text-slate-400 block mb-1.5">
-                      Target Crops:
-                    </span>
-                    <div className="flex flex-wrap gap-1">
-                      {product.targetCrops.map((crop, idx) => (
-                        <span
-                          key={idx}
-                          className="bg-slate-100 text-slate-800 text-[11px] font-semibold px-2 py-0.5 rounded"
-                        >
-                          {crop}
-                        </span>
-                      ))}
+                  <div className="space-y-1.5 pt-2 text-xs">
+                    <div className="text-slate-600 font-medium">
+                      <strong className="text-slate-900 font-bold">Target Crops:</strong> {product.targetCrops.join(', ')}
+                    </div>
+                    <div className="text-slate-600 font-medium">
+                      <strong className="text-slate-900 font-bold">Formulation:</strong> {product.formulationType}
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Action Button */}
-              <div className="p-6 pt-0">
+              {/* Bottom Spec Button */}
+              <div className="p-6 pt-0 border-t border-orange-100 flex items-center justify-between mt-4">
                 <button
                   onClick={() => setActiveProductModal(product)}
-                  className="w-full inline-flex items-center justify-center gap-2 bg-slate-900 group-hover:bg-orange-600 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl shadow transition-all duration-300"
+                  className="w-full py-3 bg-orange-50 hover:bg-orange-600 text-orange-700 hover:text-white font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all flex items-center justify-center gap-2 group-hover:shadow-md"
                 >
-                  <span>View Details</span>
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <span>VIEW TECHNICAL SPECS & DOSAGE</span>
+                  <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
@@ -196,7 +189,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
 
       </div>
 
-      {/* Product Detail Modal */}
+      {/* Product Spec Modal */}
       {activeProductModal && (
         <ProductDetailModal
           product={activeProductModal}
