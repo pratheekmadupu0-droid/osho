@@ -10,14 +10,14 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
-  const [activeTab, setActiveTab] = useState<'supercobra' | 'hunter'>('supercobra');
+  const [activeTab, setActiveTab] = useState<'shooter' | 'allout'>('shooter');
   const [shooterMuted, setShooterMuted] = useState(true);
   const [alloutMuted, setAlloutMuted] = useState(true);
 
-  const superCobraProduct = PRODUCTS.find(p => p.id === 'osho-super-cobra') || PRODUCTS[0];
-  const hunterProduct = PRODUCTS.find(p => p.id === 'osho-hunter') || PRODUCTS[1];
+  const shooterProduct = PRODUCTS.find(p => p.id === 'osho-shooter') || PRODUCTS[0];
+  const alloutProduct = PRODUCTS.find(p => p.id === 'osho-allout') || PRODUCTS[1];
 
-  const currentProduct = activeTab === 'supercobra' ? superCobraProduct : hunterProduct;
+  const currentProduct = activeTab === 'shooter' ? shooterProduct : alloutProduct;
 
   const toggleShooterMute = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -144,33 +144,33 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
               {/* Product Switcher Tabs */}
               <div className="flex items-center justify-between bg-orange-50/80 p-1.5 rounded-2xl border border-orange-200 gap-1">
                 <button
-                  onClick={() => setActiveTab('supercobra')}
+                  onClick={() => setActiveTab('shooter')}
                   className={`flex-1 py-2.5 rounded-xl text-[11px] sm:text-xs font-black uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1.5 ${
-                    activeTab === 'supercobra'
+                    activeTab === 'shooter'
                       ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-md shadow-orange-600/30'
                       : 'text-slate-600 hover:text-orange-600'
                   }`}
                 >
                   <Zap className="w-3.5 h-3.5 shrink-0" />
-                  <span>SUPER COBRA</span>
+                  <span>SHOOTER</span>
                 </button>
 
                 <button
-                  onClick={() => setActiveTab('hunter')}
+                  onClick={() => setActiveTab('allout')}
                   className={`flex-1 py-2.5 rounded-xl text-[11px] sm:text-xs font-black uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1.5 ${
-                    activeTab === 'hunter'
+                    activeTab === 'allout'
                       ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-md shadow-orange-600/30'
                       : 'text-slate-600 hover:text-orange-600'
                   }`}
                 >
                   <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
-                  <span>HUNTER</span>
+                  <span>ALL OUT</span>
                 </button>
               </div>
 
               {/* Active Product Video Reel Container (9:16 Vertical Ratio) */}
               <div className="relative aspect-[9/13] sm:aspect-[9/14] w-full bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 group shadow-inner">
-                {activeTab === 'supercobra' ? (
+                {activeTab === 'shooter' ? (
                   <video
                     id="hero-shooter-video"
                     src="/shooter-product.mp4"
@@ -203,12 +203,12 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
                   </span>
 
                   <button
-                    onClick={activeTab === 'supercobra' ? toggleShooterMute : toggleAlloutMute}
+                    onClick={activeTab === 'shooter' ? toggleShooterMute : toggleAlloutMute}
                     className="p-2 rounded-full bg-slate-950/90 hover:bg-orange-600 text-white backdrop-blur-md border border-slate-700 transition-all shadow-md"
                     title="Toggle Audio"
                     aria-label="Toggle video audio"
                   >
-                    {(activeTab === 'supercobra' ? shooterMuted : alloutMuted) ? (
+                    {(activeTab === 'shooter' ? shooterMuted : alloutMuted) ? (
                       <VolumeX className="w-3.5 h-3.5 text-slate-300" />
                     ) : (
                       <Volume2 className="w-3.5 h-3.5 text-orange-400" />

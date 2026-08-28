@@ -75,7 +75,7 @@ export const DynamicFeaturedProducts: React.FC<DynamicFeaturedProductsProps> = (
         {/* Video Reel Showcase Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
           {videoProducts.map((product, idx) => {
-            const videoId = product.id === 'shoote' ? 'shooter-video' : 'allout-video';
+            const videoId = product.id.includes('shooter') ? 'shooter-video' : 'allout-video';
             const isMuted = mutedStates[videoId] ?? true;
 
             return (

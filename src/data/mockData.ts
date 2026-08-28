@@ -55,8 +55,8 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
 
 export const PRODUCTS: Product[] = [
   {
-    id: 'osho-super-cobra',
-    name: 'SUPER COBRA',
+    id: 'osho-shooter',
+    name: 'SHOOTER',
     category: 'Insecticides',
     targetCrops: ['Paddy / Rice', 'Cotton', 'Chilli', 'Vegetables', 'Pulses'],
     targetPestsWeeds: ['Bollworms', 'Stem Borer', 'Thrips', 'Aphids', 'Caterpillars'],
@@ -79,8 +79,8 @@ export const PRODUCTS: Product[] = [
     dosagePlaceholder: '250 ml per acre'
   },
   {
-    id: 'osho-hunter',
-    name: 'HUNTER',
+    id: 'osho-allout',
+    name: 'ALL OUT',
     category: 'Insecticides',
     targetCrops: ['Cotton', 'Chilli', 'Groundnut', 'Redgram', 'Maize'],
     targetPestsWeeds: ['Spodoptera', 'Helicoverpa', 'Leaf Folder', 'Pink Bollworm'],
@@ -183,7 +183,7 @@ export const CROP_SOLUTIONS: CropSolution[] = [
     keyChallenges: ['Stem Borer', 'Brown Plant Hopper (BPH)', 'Foliar Blast', 'Panicle Mite'],
     recommendedCategoryFocus: ['Insecticides', 'Plant Growth & Nutrition'],
     commonPests: ['Stem Borer', 'BPH', 'Blast'],
-    fieldTips: 'Apply SUPER COBRA at early tillering and spray MANTRA at panicle initiation for maximum grain weight.'
+    fieldTips: 'Apply SHOOTER at early tillering and spray MANTRA at panicle initiation for maximum grain weight.'
   },
   {
     id: 'cotton-solutions',
@@ -194,7 +194,7 @@ export const CROP_SOLUTIONS: CropSolution[] = [
     keyChallenges: ['Pink Bollworm', 'Whitefly', 'Thrips', 'Aphids'],
     recommendedCategoryFocus: ['Insecticides', 'Biological / Specialty Solutions'],
     commonPests: ['Bollworm', 'Whitefly', 'Thrips'],
-    fieldTips: 'Spray HUNTER upon early larval sighting to protect squaring and boll opening.'
+    fieldTips: 'Spray ALL OUT upon early larval sighting to protect squaring and boll opening.'
   },
   {
     id: 'chilli-vegetables',
@@ -205,7 +205,7 @@ export const CROP_SOLUTIONS: CropSolution[] = [
     keyChallenges: ['Chilli Thrips', 'Mites', 'Fruit Borer', 'Powdery Mildew'],
     recommendedCategoryFocus: ['Insecticides', 'Plant Growth & Nutrition'],
     commonPests: ['Black Thrips', 'Fruit Borer', 'Mites'],
-    fieldTips: 'Combine SUPER COBRA with OZO SPEED at pre-flowering to avoid flower drop and control thrips.'
+    fieldTips: 'Combine SHOOTER with OZO SPEED at pre-flowering to avoid flower drop and control thrips.'
   },
   {
     id: 'pulses-oilseeds',
