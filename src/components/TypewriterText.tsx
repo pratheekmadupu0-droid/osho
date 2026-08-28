@@ -22,7 +22,7 @@ export const TypewriterText: React.FC<TypewriterTextProps> = ({
   useEffect(() => {
     const targetWord = words[wordIndex % words.length];
 
-    let timer: NodeJS.Timeout;
+    let timer: ReturnType<typeof setTimeout>;
 
     if (isDeleting) {
       timer = setTimeout(() => {
