@@ -124,7 +124,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
 
         {/* Modal Footer */}
         <div className="p-3 bg-slate-100 border-t border-slate-200 text-center text-[11px] text-slate-500 font-medium">
-          OSHO CROP CARE PVT. LTD. Product Directory Search
+          PRINSTAN AGRI CARE PVT. LTD. Product Directory Search
         </div>
 
       </div>

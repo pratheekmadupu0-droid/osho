@@ -12,7 +12,7 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onNavigate }) => {
   return (
     <div className="pt-24 min-h-screen bg-slate-50">
       {/* Header Banner */}
-      <div className="bg-slate-900 text-white py-12 relative overflow-hidden">
+      <div className="bg-slate-950 text-white py-12 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-xs font-semibold text-orange-400 mb-3 uppercase tracking-wider">
             <button onClick={() => onNavigate('home')} className="hover:text-white transition-colors">
@@ -47,7 +47,7 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onNavigate }) => {
                 Rigorous Formulations Testing Framework
               </h2>
               <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                At OSHO CROP CARE PVT. LTD., our commitment to quality starts long before a container reaches the farm retail counter. Raw technical materials are subjected to comprehensive identity testing, specific gravity testing, active ingredient quantitative assay, and solubility verification.
+                At PRINSTAN AGRI CARE PVT. LTD., our commitment to quality starts long before a container reaches the farm retail counter. Raw technical materials are subjected to comprehensive identity testing, specific gravity testing, active ingredient quantitative assay, and solubility verification.
               </p>
               <p className="text-slate-600 text-sm leading-relaxed font-normal">
                 Batch retain samples are archived under controlled environmental conditions to monitor stability across thermal fluctuations, ensuring that products remain effective throughout their designated shelf life.

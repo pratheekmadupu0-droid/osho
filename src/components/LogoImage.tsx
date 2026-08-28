@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
 
 interface LogoImageProps {
+  src?: string;
   className?: string;
   alt?: string;
 }
 
 export const LogoImage: React.FC<LogoImageProps> = ({
+  src = '/logo.jpeg',
   className = 'h-10 w-auto',
-  alt = 'OSHO CROP CARE PVT. LTD. Official Logo'
+  alt = 'PRINSTAN AGRI CARE PVT. LTD. Official Logo'
 }) => {
   const [dataUrl, setDataUrl] = useState<string | null>(null);
 
   useEffect(() => {
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    img.src = '/logo.jpeg';
+    img.src = src;
     img.onload = () => {
       const canvas = document.createElement('canvas');
       canvas.width = img.naturalWidth;
@@ -41,7 +43,7 @@ export const LogoImage: React.FC<LogoImageProps> = ({
       ctx.putImageData(imageData, 0, 0);
       setDataUrl(canvas.toDataURL('image/png'));
     };
-  }, []);
+  }, [src]);
 
   if (dataUrl) {
     return (
@@ -56,7 +58,7 @@ export const LogoImage: React.FC<LogoImageProps> = ({
   // Fallback while canvas processes
   return (
     <img
-      src="/logo.jpeg"
+      src={src}
       alt={alt}
       className={`${className} mix-blend-multiply`}
     />

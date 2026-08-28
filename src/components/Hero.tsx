@@ -10,14 +10,14 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
-  const [activeTab, setActiveTab] = useState<'shooter' | 'allout'>('shooter');
+  const [activeTab, setActiveTab] = useState<'supercobra' | 'hunter'>('supercobra');
   const [shooterMuted, setShooterMuted] = useState(true);
   const [alloutMuted, setAlloutMuted] = useState(true);
 
-  const shooterProduct = PRODUCTS.find(p => p.id === 'osho-shooter-flagship') || PRODUCTS[0];
-  const alloutProduct = PRODUCTS.find(p => p.id === 'osho-allout-flagship') || PRODUCTS[1];
+  const superCobraProduct = PRODUCTS.find(p => p.id === 'prinstan-super-cobra') || PRODUCTS[0];
+  const hunterProduct = PRODUCTS.find(p => p.id === 'prinstan-hunter') || PRODUCTS[1];
 
-  const currentProduct = activeTab === 'shooter' ? shooterProduct : alloutProduct;
+  const currentProduct = activeTab === 'supercobra' ? superCobraProduct : hunterProduct;
 
   const toggleShooterMute = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -74,7 +74,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-orange-500" />
               </span>
-              <span className="truncate">OSHO CROP PROTECTION CHEMISTRY</span>
+              <span className="truncate">PRINSTAN AGRI CARE PVT. LTD.</span>
               <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-400 animate-pulse shrink-0" />
             </div>
 
@@ -88,26 +88,26 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
 
             {/* Supporting Copy */}
             <p className="text-slate-200 text-sm sm:text-base lg:text-lg font-light leading-relaxed max-w-2xl text-shadow-sm">
-              Advanced crop protection chemistry engineered to defend cash crops, cereals, and vegetables against severe pest pressures, crop disease, and environmental stress.
+              PRINSTAN AGRI CARE PVT. LTD. provides high-performance agricultural products, organic crop care solutions, biostimulants, and farming innovations across India.
             </p>
 
-            {/* Feature Highlights Grid - 2 columns on all devices */}
+            {/* Feature Highlights Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-4 max-w-lg text-xs font-medium text-slate-300">
               <div className="flex items-center gap-2 bg-slate-900/70 p-2.5 rounded-xl border border-slate-800 backdrop-blur-xs">
                 <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
-                <span>Naturally Derived Actives</span>
+                <span>Naturally Derived Bio-Actives</span>
               </div>
               <div className="flex items-center gap-2 bg-slate-900/70 p-2.5 rounded-xl border border-slate-800 backdrop-blur-xs">
                 <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
-                <span>250ml / Acre Dosage</span>
+                <span>250ml / Acre High Efficacy</span>
               </div>
               <div className="flex items-center gap-2 bg-slate-900/70 p-2.5 rounded-xl border border-slate-800 backdrop-blur-xs">
                 <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
-                <span>HPLC Analytical Purity</span>
+                <span>HPLC Analytical Batch Control</span>
               </div>
               <div className="flex items-center gap-2 bg-slate-900/70 p-2.5 rounded-xl border border-slate-800 backdrop-blur-xs">
                 <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
-                <span>Pan-India Agronomic Reach</span>
+                <span>Pan-India Agronomic Network</span>
               </div>
             </div>
 
@@ -128,7 +128,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
                 onClick={() => onNavigate('about')}
                 className="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs uppercase tracking-widest px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition-all backdrop-blur-md hover:border-white/40"
               >
-                <span>ABOUT OSHO CROP CARE</span>
+                <span>ABOUT PRINSTAN</span>
                 <ArrowRight className="w-4 h-4 opacity-70" />
               </button>
             </div>
@@ -146,33 +146,33 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
               {/* Product Switcher Tabs */}
               <div className="flex items-center justify-between bg-slate-950 p-1.5 rounded-2xl border border-slate-800 gap-1">
                 <button
-                  onClick={() => setActiveTab('shooter')}
+                  onClick={() => setActiveTab('supercobra')}
                   className={`flex-1 py-2.5 rounded-xl text-[11px] sm:text-xs font-black uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1.5 ${
-                    activeTab === 'shooter'
+                    activeTab === 'supercobra'
                       ? 'bg-gradient-to-r from-red-600 to-orange-600 text-white shadow-lg shadow-red-600/30'
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
                   <Zap className="w-3.5 h-3.5 text-amber-300 shrink-0" />
-                  <span>OSHO SHOOTER</span>
+                  <span>SUPER COBRA</span>
                 </button>
 
                 <button
-                  onClick={() => setActiveTab('allout')}
+                  onClick={() => setActiveTab('hunter')}
                   className={`flex-1 py-2.5 rounded-xl text-[11px] sm:text-xs font-black uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1.5 ${
-                    activeTab === 'allout'
+                    activeTab === 'hunter'
                       ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-600/30'
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
                   <ShieldCheck className="w-3.5 h-3.5 text-cyan-300 shrink-0" />
-                  <span>OSHO ALL OUT</span>
+                  <span>HUNTER</span>
                 </button>
               </div>
 
               {/* Active Product Video Reel Container (9:16 Vertical Ratio) */}
               <div className="relative aspect-[9/13] sm:aspect-[9/14] w-full bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 group shadow-inner">
-                {activeTab === 'shooter' ? (
+                {activeTab === 'supercobra' ? (
                   <video
                     id="hero-shooter-video"
                     src="/shooter-product.mp4"
@@ -205,12 +205,12 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
                   </span>
 
                   <button
-                    onClick={activeTab === 'shooter' ? toggleShooterMute : toggleAlloutMute}
+                    onClick={activeTab === 'supercobra' ? toggleShooterMute : toggleAlloutMute}
                     className="p-2 rounded-full bg-slate-950/90 hover:bg-orange-600 text-white backdrop-blur-md border border-slate-700 transition-all shadow-md"
                     title="Toggle Audio"
                     aria-label="Toggle video audio"
                   >
-                    {(activeTab === 'shooter' ? shooterMuted : alloutMuted) ? (
+                    {(activeTab === 'supercobra' ? shooterMuted : alloutMuted) ? (
                       <VolumeX className="w-3.5 h-3.5 text-slate-300" />
                     ) : (
                       <Volume2 className="w-3.5 h-3.5 text-orange-400" />
@@ -234,7 +234,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
                   </p>
 
                   <div className="pt-2 flex items-center justify-between text-[10px] font-semibold text-slate-400 border-t border-slate-800">
-                    <span className="truncate mr-2">Crops: Chili, Tomato, Cotton, Grapes</span>
+                    <span className="truncate mr-2">Crops: Paddy, Cotton, Chilli, Vegetables</span>
                     {onSelectProduct && (
                       <button
                         onClick={() => onSelectProduct(currentProduct)}
@@ -255,10 +255,10 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
                   <span className="text-orange-400">HPLC TESTED</span>
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-[10px] sm:text-[11px] font-medium text-slate-300">
-                  <div>Enzymes: <span className="text-white font-bold">40.0%</span></div>
+                  <div>Bio-Actives: <span className="text-white font-bold">40.0%</span></div>
                   <div>Organic Acid: <span className="text-white font-bold">1.0%</span></div>
                   <div>Carriers: <span className="text-white font-bold">59.0%</span></div>
-                  <div>Total Active: <span className="text-orange-400 font-bold">100.0%</span></div>
+                  <div>Total Purity: <span className="text-orange-400 font-bold">100.0%</span></div>
                 </div>
               </div>
 
@@ -268,7 +268,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
 
         </div>
 
-        {/* 4. Quick Stat Bar - Responsive 2x2 grid on mobile, 4 columns on desktop */}
+        {/* 4. Quick Stat Bar */}
         <div className="mt-12 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           
           <div className="glass-card-dark p-3.5 sm:p-4 rounded-2xl flex items-center gap-3 sm:gap-4 hover:border-orange-500/50 transition-all duration-300 group">
@@ -276,8 +276,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
               <Sprout className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
-              <div className="text-base sm:text-xl font-extrabold text-white">4+ Formulations</div>
-              <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">Insecticide & Fungicide</div>
+              <div className="text-base sm:text-xl font-extrabold text-white">50+ Formulations</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">Insecticide & Bio-Nutrients</div>
             </div>
           </div>
 
@@ -287,7 +287,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
             </div>
             <div>
               <div className="text-base sm:text-xl font-extrabold text-white">100% Active Purity</div>
-              <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">Batch Analytical Control</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">HPLC Analytical Control</div>
             </div>
           </div>
 
@@ -296,8 +296,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
               <Award className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
-              <div className="text-base sm:text-xl font-extrabold text-white">ISO 9001:2015</div>
-              <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">Quality Management</div>
+              <div className="text-base sm:text-xl font-extrabold text-white">EST. 2017</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">Hyderabad, Telangana</div>
             </div>
           </div>
 
@@ -306,8 +306,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
               <Zap className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
-              <div className="text-base sm:text-xl font-extrabold text-white">Pan-India Reach</div>
-              <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">Agronomic Advisory</div>
+              <div className="text-base sm:text-xl font-extrabold text-white">10,000+ Dealers</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">Pan-India Agronomic Network</div>
             </div>
           </div>
 

@@ -46,7 +46,7 @@ export const QualitySection: React.FC = () => {
             </h2>
 
             <p className="text-slate-600 text-base font-normal leading-relaxed">
-              Every OSHO crop protection formulation undergoes stringent multi-stage quality checks to ensure maximum bio-efficacy and product integrity in the field.
+              Every PRINSTAN crop protection formulation undergoes stringent multi-stage quality checks to ensure maximum bio-efficacy and product integrity in the field.
             </p>
           </div>
         </ScrollReveal>
