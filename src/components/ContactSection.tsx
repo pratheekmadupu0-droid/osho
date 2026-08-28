@@ -36,7 +36,7 @@ export const ContactSection: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const randomRef = `PRINSTAN-INQ-2026-${Math.floor(1000 + Math.random() * 9000)}`;
+    const randomRef = `OSHO-INQ-2026-${Math.floor(1000 + Math.random() * 9000)}`;
     
     setTimeout(() => {
       setIsSubmitting(false);
@@ -89,7 +89,7 @@ export const ContactSection: React.FC = () => {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg font-light">
-            Connect directly with PRINSTAN AGRI CARE PVT. LTD. for technical product inquiry, distribution partnerships, or tailored crop protection support.
+            Connect directly with OSHO CROP CARE PVT. LTD. for technical product inquiry, distribution partnerships, or tailored crop protection support.
           </p>
         </div>
 
@@ -173,7 +173,7 @@ export const ContactSection: React.FC = () => {
                   <div>
                     <span className="text-[10px] uppercase font-extrabold tracking-widest text-slate-400 block">Registered Headquarters</span>
                     <p className="text-slate-100 font-bold text-sm mt-0.5">{COMPANY_CONTACT_INFO.addressPlaceholder}</p>
-                    <span className="text-[11px] text-orange-400 font-semibold mt-1 block">PRINSTAN AGRI CARE PVT. LTD.</span>
+                    <span className="text-[11px] text-orange-400 font-semibold mt-1 block">OSHO CROP CARE PVT. LTD.</span>
                   </div>
                 </div>
               </div>
@@ -232,7 +232,7 @@ export const ContactSection: React.FC = () => {
                   </span>
                   <h4 className="text-2xl font-extrabold text-white">Inquiry Successfully Transmitted</h4>
                   <p className="text-slate-300 text-sm max-w-md mx-auto leading-relaxed">
-                    Thank you, <strong className="text-white">{formData.fullName}</strong>. Your message regarding <span className="text-orange-400 font-semibold">{formData.inquiryType}</span> has been logged under Reference <span className="font-mono text-orange-300">{refNumber}</span>. A PRINSTAN Agri Care agronomic representative will respond shortly.
+                    Thank you, <strong className="text-white">{formData.fullName}</strong>. Your message regarding <span className="text-orange-400 font-semibold">{formData.inquiryType}</span> has been logged under Reference <span className="font-mono text-orange-300">{refNumber}</span>. An OSHO Crop Care agronomic representative will respond shortly.
                   </p>
                 </div>
 
@@ -383,7 +383,7 @@ export const ContactSection: React.FC = () => {
                 </button>
 
                 <p className="text-[11px] text-slate-400 text-center">
-                  🔒 Secure Corporate Transmission. Official inquiries are handled confidentially by PRINSTAN AGRI CARE PVT. LTD. representatives.
+                  🔒 Secure Corporate Transmission. Official inquiries are handled confidentially by OSHO CROP CARE PVT. LTD. representatives.
                 </p>
 
               </form>

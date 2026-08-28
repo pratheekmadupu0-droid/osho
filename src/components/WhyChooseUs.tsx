@@ -6,23 +6,23 @@ export const WhyChooseUs: React.FC = () => {
   const points = [
     {
       num: '01',
-      title: 'PRODUCT QUALITY',
-      desc: 'Formulations engineered with high active purity and batch consistency to safeguard yield potential.'
+      title: 'CROP PROTECTION',
+      desc: 'Focused agricultural protection solutions crafted to defend cash crops against devastating insects, weeds, and fungal pathogens.'
     },
     {
       num: '02',
-      title: 'FARMER TRUST',
-      desc: 'Tested and proven crop protection solutions built to tackle real field pressures effectively.'
+      title: 'QUALITY FOCUS',
+      desc: 'Unwavering commitment to consistent product quality, HPLC analytical purity, and reliable field performance.'
     },
     {
       num: '03',
-      title: 'SCIENTIFIC INTEGRITY',
-      desc: 'Rigorous analytical and formulation protocols adhering to strict industry standards.'
+      title: 'FARMER CENTRIC',
+      desc: 'Solutions designed around real agricultural needs, supporting farmer livelihood, crop yield, and economic return.'
     },
     {
       num: '04',
-      title: 'SUSTAINABLE APPROACH',
-      desc: 'Responsible stewardship focused on targeted efficacy, crop safety, and minimal ecological footprint.'
+      title: 'AGRI INNOVATION',
+      desc: 'Continuously evolving agricultural solutions, modern formulation chemistry, and sustainable bio-organic crop care.'
     }
   ];
 
@@ -35,13 +35,13 @@ export const WhyChooseUs: React.FC = () => {
           <div className="max-w-3xl space-y-4 mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 border border-orange-500/30 text-xs font-mono font-bold uppercase tracking-widest">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>THE PRINSTAN ADVANTAGE</span>
+              <span>THE OSHO ADVANTAGE</span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-heading leading-tight">
               WHY GROWERS & DISTRIBUTORS <br />
               <span className="bg-gradient-to-r from-orange-500 via-amber-400 to-amber-200 bg-clip-text text-transparent font-black">
-                TRUST PRINSTAN AGRI CARE
+                TRUST OSHO CROP CARE
               </span>
             </h2>
           </div>
@@ -67,7 +67,7 @@ export const WhyChooseUs: React.FC = () => {
                 </div>
 
                 <div className="mt-8 pt-4 border-t border-slate-900 flex items-center justify-between text-[10px] font-bold text-slate-500 uppercase tracking-wider">
-                  <span>PRINSTAN COMMITMENT</span>
+                  <span>OSHO COMMITMENT</span>
                   <div className="w-6 h-0.5 bg-orange-500 group-hover:w-12 transition-all duration-300" />
                 </div>
               </div>

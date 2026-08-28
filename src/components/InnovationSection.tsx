@@ -39,7 +39,7 @@ export const InnovationSection: React.FC<InnovationSectionProps> = ({ onNavigate
             </h2>
 
             <p className="text-slate-300 text-base leading-relaxed font-light">
-              Modern crop protection demands combining proven chemical science with smart digital insights. At PRINSTAN AGRI CARE, we explore precise application protocols, targeted release systems, and field monitoring to minimize wastage and maximize protection efficacy.
+              Modern crop protection demands combining proven chemical science with smart digital insights. At OSHO CROP CARE, we explore precise application protocols, targeted release systems, and field monitoring to minimize wastage and maximize protection efficacy.
             </p>
 
             {/* Feature Pills */}

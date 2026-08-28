@@ -23,7 +23,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white font-heading">
-            ABOUT <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 bg-clip-text text-transparent">PRINSTAN AGRI CARE</span>
+            ABOUT <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 bg-clip-text text-transparent">OSHO CROP CARE</span>
           </h1>
           <p className="text-slate-300 text-base sm:text-lg mt-3 max-w-2xl font-light">
             Empowering Indian farmers through scientific crop protection chemistry, high-purity biostimulants, and sustainable agricultural innovation.
@@ -47,11 +47,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               </h2>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                PRINSTAN AGRI CARE PVT. LTD. was established in 2017 in Hyderabad with a mission to deliver high-performance crop care solutions to Indian agriculture. We specialize in crop protection, plant nutrition biostimulants, bio-organic crop activators, and certified seed inputs.
+                OSHO CROP CARE PVT. LTD. was established in Hyderabad with a mission to deliver high-performance crop care solutions to Indian agriculture. We specialize in crop protection, plant nutrition biostimulants, bio-organic crop activators, and certified seed inputs.
               </p>
 
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Through our extensive pan-India network of over 10,000 distributors and dealers, PRINSTAN AGRI CARE provides farmers with reliable, lab-tested formulations that protect cash crops, cereals, and commercial horticulture from severe pest pressures and environmental stress.
+                Through our extensive pan-India network of over 10,000 distributors and dealers, OSHO CROP CARE provides farmers with reliable, lab-tested formulations that protect cash crops, cereals, and commercial horticulture from severe pest pressures and environmental stress.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-100">
@@ -70,7 +70,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
                 <img
                   src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=1200&auto=format&fit=crop"
-                  alt="PRINSTAN Agri Field"
+                  alt="OSHO Agri Field"
                   className="w-full h-[450px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
@@ -78,7 +78,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <div className="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-950/90 backdrop-blur-md border border-slate-800 text-white space-y-2">
                   <h3 className="font-extrabold text-lg text-white">ISO 9001:2015 Quality Commitment</h3>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    Every batch of PRINSTAN products undergoes HPLC analytical purity verification before release to ensure maximum field efficacy.
+                    Every batch of OSHO products undergoes HPLC analytical purity verification before release to ensure maximum field efficacy.
                   </p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-3 mb-12">
             <h2 className="text-3xl font-extrabold text-slate-900 font-heading">
-              THE PILLARS OF PRINSTAN AGRI CARE
+              THE PILLARS OF OSHO CROP CARE
             </h2>
             <p className="text-slate-600 text-sm">
               Our core principles driving agricultural innovation, product consistency, and farmer prosperity.

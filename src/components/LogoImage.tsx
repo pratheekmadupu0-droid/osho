@@ -9,7 +9,7 @@ interface LogoImageProps {
 export const LogoImage: React.FC<LogoImageProps> = ({
   src = '/logo.jpeg',
   className = 'h-10 w-auto',
-  alt = 'PRINSTAN AGRI CARE PVT. LTD. Official Logo'
+  alt = 'OSHO CROP CARE PVT. LTD. Official Logo'
 }) => {
   const [dataUrl, setDataUrl] = useState<string | null>(null);
 

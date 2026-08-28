@@ -35,7 +35,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
 
             <ScrollReveal animation="fade-right" delay={300}>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
-                At PRINSTAN AGRI CARE PVT. LTD., we believe that protecting crops is essential to securing agricultural productivity and supporting farming communities. As modern agriculture faces evolving pest challenges, climate variability, and pressure for higher yields, access to dependable crop protection chemistry becomes paramount.
+                At OSHO CROP CARE PVT. LTD., we believe that protecting crops is essential to securing agricultural productivity and supporting farming communities. As modern agriculture faces evolving pest challenges, climate variability, and pressure for higher yields, access to dependable crop protection chemistry becomes paramount.
               </p>
             </ScrollReveal>
 
@@ -51,7 +51,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                   onClick={() => onNavigate('about')}
                   className="inline-flex items-center gap-3 bg-slate-900 hover:bg-orange-600 text-white font-extrabold text-xs uppercase tracking-widest px-6 py-3.5 rounded-xl shadow-lg hover:shadow-orange-600/30 transition-all duration-300 group"
                 >
-                  <span>Discover PRINSTAN</span>
+                  <span>Discover OSHO CROP CARE</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </button>
 

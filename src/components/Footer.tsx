@@ -24,12 +24,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="flex items-center gap-3">
               <LogoImage
                 src="/logo.jpeg"
-                alt="PRINSTAN AGRI CARE PVT. LTD. Logo"
+                alt="OSHO CROP CARE PVT. LTD. Logo"
                 className="h-10 w-auto"
               />
               <div>
                 <h3 className="text-lg font-extrabold text-white tracking-tight font-heading">
-                  PRINSTAN AGRI CARE
+                  OSHO CROP CARE
                 </h3>
                 <span className="text-[10px] font-mono font-bold text-orange-400 tracking-widest uppercase block">
                   PVT. LTD. • HYDERABAD
@@ -38,12 +38,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </div>
 
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-              PRINSTAN AGRI CARE PVT. LTD. provides high-performance agricultural crop protection products, organic bio-stimulants, fertilizers, and crop health solutions across India.
+              OSHO CROP CARE PVT. LTD. provides high-performance agricultural crop protection products, organic bio-stimulants, fertilizers, and crop health solutions across India.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-[11px] font-semibold text-slate-300">
               <ShieldCheck className="w-3.5 h-3.5 text-orange-400" />
-              <span>EST. 2017 • ISO Certified Manufacturing</span>
+              <span>ISO 9001:2015 Certified Manufacturing</span>
             </div>
           </div>
 
@@ -125,13 +125,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-orange-400 shrink-0" />
-                <a href="tel:+919550758929" className="hover:text-orange-400 transition-colors font-bold">
+                <a href="tel:18004256746" className="hover:text-orange-400 transition-colors font-bold">
                   {COMPANY_CONTACT_INFO.phonePlaceholder}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-orange-400 shrink-0" />
-                <a href="mailto:info@prinstanagricarepvtltd.com" className="hover:text-orange-400 transition-colors font-mono">
+                <a href="mailto:info@oshocropcare.com" className="hover:text-orange-400 transition-colors font-mono">
                   {COMPANY_CONTACT_INFO.emailPlaceholder}
                 </a>
               </li>
@@ -147,10 +147,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom Copyright Bar */}
         <div className="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
           <div>
-            © {new Date().getFullYear()} <strong className="text-slate-300">PRINSTAN AGRI CARE PVT. LTD.</strong> All Rights Reserved.
+            © {new Date().getFullYear()} <strong className="text-slate-300">OSHO CROP CARE PVT. LTD.</strong> All Rights Reserved.
           </div>
           <div className="flex items-center gap-4">
-            <span>Corporate Identity No. U24210TG2017PTC118892</span>
+            <span>Corporate Registration No. U24210TG2015PTC099882</span>
             <span>•</span>
             <span>Hyderabad, Telangana</span>
           </div>

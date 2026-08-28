@@ -14,8 +14,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
   const [shooterMuted, setShooterMuted] = useState(true);
   const [alloutMuted, setAlloutMuted] = useState(true);
 
-  const superCobraProduct = PRODUCTS.find(p => p.id === 'prinstan-super-cobra') || PRODUCTS[0];
-  const hunterProduct = PRODUCTS.find(p => p.id === 'prinstan-hunter') || PRODUCTS[1];
+  const superCobraProduct = PRODUCTS.find(p => p.id === 'osho-super-cobra') || PRODUCTS[0];
+  const hunterProduct = PRODUCTS.find(p => p.id === 'osho-hunter') || PRODUCTS[1];
 
   const currentProduct = activeTab === 'supercobra' ? superCobraProduct : hunterProduct;
 
@@ -74,7 +74,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-orange-500" />
               </span>
-              <span className="truncate">PRINSTAN AGRI CARE PVT. LTD.</span>
+              <span className="truncate">OSHO CROP CARE PVT. LTD.</span>
               <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-400 animate-pulse shrink-0" />
             </div>
 
@@ -88,7 +88,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
 
             {/* Supporting Copy */}
             <p className="text-slate-200 text-sm sm:text-base lg:text-lg font-light leading-relaxed max-w-2xl text-shadow-sm">
-              PRINSTAN AGRI CARE PVT. LTD. provides high-performance agricultural products, organic crop care solutions, biostimulants, and farming innovations across India.
+              OSHO CROP CARE PVT. LTD. provides high-performance agricultural products, organic crop care solutions, biostimulants, and farming innovations across India.
             </p>
 
             {/* Feature Highlights Grid */}
@@ -128,7 +128,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
                 onClick={() => onNavigate('about')}
                 className="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs uppercase tracking-widest px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition-all backdrop-blur-md hover:border-white/40"
               >
-                <span>ABOUT PRINSTAN</span>
+                <span>ABOUT OSHO CROP CARE</span>
                 <ArrowRight className="w-4 h-4 opacity-70" />
               </button>
             </div>
@@ -296,7 +296,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onSelectProduct }) => {
               <Award className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div>
-              <div className="text-base sm:text-xl font-extrabold text-white">EST. 2017</div>
+              <div className="text-base sm:text-xl font-extrabold text-white">ESTABLISHED BRAND</div>
               <div className="text-[10px] sm:text-[11px] text-slate-400 font-medium">Hyderabad, Telangana</div>
             </div>
           </div>

@@ -37,7 +37,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white font-heading">
-            CONNECT WITH <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 bg-clip-text text-transparent">PRINSTAN AGRI CARE</span>
+            CONNECT WITH <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 bg-clip-text text-transparent">OSHO CROP CARE</span>
           </h1>
           <p className="text-slate-300 text-base sm:text-lg mt-3 max-w-2xl font-light">
             Have questions about formulation dosage, dealership inquiries, or crop defense advisory? Our technical team is ready to assist you.
@@ -58,7 +58,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               </div>
 
               <h2 className="text-2xl font-extrabold text-white font-heading">
-                PRINSTAN AGRI CARE PVT. LTD.
+                OSHO CROP CARE PVT. LTD.
               </h2>
 
               <div className="space-y-6 pt-4 border-t border-slate-800 text-xs sm:text-sm text-slate-300">
@@ -80,8 +80,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   </div>
                   <div>
                     <strong className="text-white block font-bold mb-1">Customer Helpline:</strong>
-                    <a href="tel:+919550758929" className="text-orange-400 hover:underline font-extrabold text-base">
-                      +91 9550758929
+                    <a href="tel:18004256746" className="text-orange-400 hover:underline font-extrabold text-base">
+                      1800-425-6746 / +91 40-27170099
                     </a>
                   </div>
                 </div>
@@ -92,8 +92,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   </div>
                   <div>
                     <strong className="text-white block font-bold mb-1">Email Inquiries:</strong>
-                    <a href="mailto:info@prinstanagricarepvtltd.com" className="text-slate-300 hover:text-orange-400 font-mono">
-                      info@prinstanagricarepvtltd.com
+                    <a href="mailto:info@oshocropcare.com" className="text-slate-300 hover:text-orange-400 font-mono">
+                      info@oshocropcare.com
                     </a>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   Inquiry Submitted Successfully!
                 </h3>
                 <p className="text-slate-600 text-sm max-w-md mx-auto leading-relaxed">
-                  Thank you for reaching out to PRINSTAN AGRI CARE PVT. LTD. Our technical representative will contact you within 24 business hours.
+                  Thank you for reaching out to OSHO CROP CARE PVT. LTD. Our technical representative will contact you within 24 business hours.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}

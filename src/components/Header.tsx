@@ -55,12 +55,12 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <LogoImage 
               src="/logo.jpeg" 
-              alt="PRINSTAN AGRI CARE PVT. LTD. Logo"
+              alt="OSHO CROP CARE PVT. LTD. Logo"
               className="h-9 sm:h-11 w-auto transition-transform group-hover:scale-105"
             />
             <div className="flex flex-col">
               <span className="font-extrabold text-sm sm:text-base tracking-tight text-white font-heading group-hover:text-orange-400 transition-colors">
-                PRINSTAN AGRI CARE
+                OSHO CROP CARE
               </span>
               <span className="text-[9px] sm:text-[10px] font-mono font-bold tracking-widest text-orange-400 uppercase">
                 PVT. LTD. • HYDERABAD
@@ -104,7 +104,7 @@ export const Header: React.FC<HeaderProps> = ({
               className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-700 hover:to-orange-600 text-white text-xs font-extrabold uppercase tracking-wider px-4 py-2.5 rounded-full shadow-lg shadow-orange-600/20 transition-all hover:scale-105"
             >
               <Phone className="w-3.5 h-3.5" />
-              <span>+91 9550758929</span>
+              <span>1800-425-6746</span>
             </button>
           </div>
 
@@ -136,7 +136,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center justify-between border-b border-slate-800 pb-3">
             <span className="text-xs font-mono font-bold text-orange-400 uppercase tracking-widest flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4" />
-              <span>PRINSTAN AGRI CARE</span>
+              <span>OSHO CROP CARE</span>
             </span>
             <button 
               onClick={() => setIsMobileMenuOpen(false)} 
@@ -175,7 +175,7 @@ export const Header: React.FC<HeaderProps> = ({
               className="w-full py-3 bg-gradient-to-r from-orange-600 to-amber-500 text-white text-xs font-extrabold uppercase tracking-wider rounded-xl shadow-lg flex items-center justify-center gap-2"
             >
               <Phone className="w-4 h-4" />
-              <span>Helpline: +91 9550758929</span>
+              <span>Helpline: 1800-425-6746</span>
             </button>
           </div>
         </div>

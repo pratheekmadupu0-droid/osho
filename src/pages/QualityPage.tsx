@@ -47,7 +47,7 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onNavigate }) => {
                 Rigorous Formulations Testing Framework
               </h2>
               <p className="text-slate-600 text-sm leading-relaxed font-normal">
-                At PRINSTAN AGRI CARE PVT. LTD., our commitment to quality starts long before a container reaches the farm retail counter. Raw technical materials are subjected to comprehensive identity testing, specific gravity testing, active ingredient quantitative assay, and solubility verification.
+                At OSHO CROP CARE PVT. LTD., our commitment to quality starts long before a container reaches the farm retail counter. Raw technical materials are subjected to comprehensive identity testing, specific gravity testing, active ingredient quantitative assay, and solubility verification.
               </p>
               <p className="text-slate-600 text-sm leading-relaxed font-normal">
                 Batch retain samples are archived under controlled environmental conditions to monitor stability across thermal fluctuations, ensuring that products remain effective throughout their designated shelf life.

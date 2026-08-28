@@ -55,14 +55,14 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
 
 export const PRODUCTS: Product[] = [
   {
-    id: 'prinstan-super-cobra',
+    id: 'osho-super-cobra',
     name: 'SUPER COBRA',
     category: 'Insecticides',
     targetCrops: ['Paddy / Rice', 'Cotton', 'Chilli', 'Vegetables', 'Pulses'],
     targetPestsWeeds: ['Bollworms', 'Stem Borer', 'Thrips', 'Aphids', 'Caterpillars'],
     formulationType: 'High-Efficacy Organic Insecticide',
     packageSizes: ['100ml', '250ml', '500ml', '1L'],
-    shortDescription: 'Flagship organic crop protection formulation by Prinstan Agri Care, providing instant knockdown and long-lasting defense against destructive farm pests.',
+    shortDescription: 'Flagship organic crop protection formulation by Osho Crop Care, providing instant knockdown and long-lasting defense against destructive farm pests.',
     keyBenefits: [
       'Rapid contact knockdown & deep translaminar leaf penetration',
       'Superior crop canopy defense & green leaf longevity',
@@ -75,11 +75,11 @@ export const PRODUCTS: Product[] = [
     hasVideo: true,
     isPlaceholder: false,
     chemicalCompositionPlaceholder: 'Enzyme Protein Hydrolysates 40%, Organic Acid 1%, Fillers & Carriers 59%',
-    registrationNoPlaceholder: 'CGB / PRINSTAN / 2017 / 8892',
+    registrationNoPlaceholder: 'CGB / OSHO / 2017 / 8892',
     dosagePlaceholder: '250 ml per acre'
   },
   {
-    id: 'prinstan-hunter',
+    id: 'osho-hunter',
     name: 'HUNTER',
     category: 'Insecticides',
     targetCrops: ['Cotton', 'Chilli', 'Groundnut', 'Redgram', 'Maize'],
@@ -99,11 +99,11 @@ export const PRODUCTS: Product[] = [
     hasVideo: true,
     isPlaceholder: false,
     chemicalCompositionPlaceholder: 'Naturally Derived Bio-Active Chemistry 100%',
-    registrationNoPlaceholder: 'CGB / PRINSTAN / 2018 / 9402',
+    registrationNoPlaceholder: 'CGB / OSHO / 2018 / 9402',
     dosagePlaceholder: '200ml - 250ml per acre'
   },
   {
-    id: 'prinstan-mantra',
+    id: 'osho-mantra',
     name: 'MANTRA',
     category: 'Plant Growth & Nutrition',
     targetCrops: ['Paddy', 'Sugarcane', 'Cotton', 'Fruits', 'Commercial Crops'],
@@ -122,11 +122,11 @@ export const PRODUCTS: Product[] = [
     hasVideo: false,
     isPlaceholder: false,
     chemicalCompositionPlaceholder: 'Amino Acids 20%, Seaweed Extract 15%, Humic Acids 10%',
-    registrationNoPlaceholder: 'CGB / PRINSTAN / BIO / 1022',
+    registrationNoPlaceholder: 'CGB / OSHO / BIO / 1022',
     dosagePlaceholder: '250 ml per acre'
   },
   {
-    id: 'prinstan-ozo-speed',
+    id: 'osho-ozo-speed',
     name: 'OZO SPEED',
     category: 'Plant Growth & Nutrition',
     targetCrops: ['Vegetables', 'Fruits', 'Spices', 'Flowering Plants', 'Field Crops'],
@@ -145,11 +145,11 @@ export const PRODUCTS: Product[] = [
     hasVideo: false,
     isPlaceholder: false,
     chemicalCompositionPlaceholder: 'Fulvic Acid & Micronutrient Complex 100%',
-    registrationNoPlaceholder: 'CGB / PRINSTAN / OZO / 4411',
+    registrationNoPlaceholder: 'CGB / OSHO / OZO / 4411',
     dosagePlaceholder: '1.5ml - 2ml per liter'
   },
   {
-    id: 'prinstan-ozo-power',
+    id: 'osho-ozo-power',
     name: 'OZO POWER',
     category: 'Biological / Specialty Solutions',
     targetCrops: ['All Field & Horticultural Crops', 'Soil Application'],
@@ -168,7 +168,7 @@ export const PRODUCTS: Product[] = [
     hasVideo: false,
     isPlaceholder: false,
     chemicalCompositionPlaceholder: 'Organic Humates, Mycorrhizae & Bio-Nutritional Granules',
-    registrationNoPlaceholder: 'CGB / PRINSTAN / SOIL / 7721',
+    registrationNoPlaceholder: 'CGB / OSHO / SOIL / 7721',
     dosagePlaceholder: '4kg - 8kg per acre'
   }
 ];
@@ -319,18 +319,18 @@ export const STATISTIC_PLACEHOLDERS = [
     subtext: 'Pan-India Agricultural Retail & Advisory Centers'
   },
   {
-    numberPlaceholder: '8+ Years',
+    numberPlaceholder: '10+ Years',
     label: 'Agri Excellence',
-    subtext: 'Incorporated 2017 in Hyderabad, Serving Indian Farmers'
+    subtext: 'Serving Farmers with Premium Crop Protection Chemistry'
   }
 ];
 
 export const COMPANY_CONTACT_INFO = {
-  name: 'PRINSTAN AGRI CARE PVT. LTD.',
-  tagline: 'Advanced Agricultural Solutions & Crop Care in India',
-  addressPlaceholder: 'Plot No 42, Prashanthi Nagar, Kukatpally Industrial Estate, Hyderabad, Telangana 500072, India',
-  phonePlaceholder: '+91 9550758929 / Customer Helpline',
-  emailPlaceholder: 'info@prinstanagricarepvtltd.com / contact@prinstanagricarepvtltd.com',
+  name: 'OSHO CROP CARE PVT. LTD.',
+  tagline: 'Advanced Agricultural Solutions & Crop Protection in India',
+  addressPlaceholder: 'Plot No. 12, IDA Nacharam, Mallapur Road, Hyderabad, Telangana 500076, India',
+  phonePlaceholder: '+91 1800-425-6746 / +91 40-27170099',
+  emailPlaceholder: 'info@oshocropcare.com / contact@oshocropcare.com',
   businessHours: 'Monday - Saturday: 9:00 AM - 6:00 PM IST',
-  technicalSupport: 'support@prinstanagricarepvtltd.com'
+  technicalSupport: 'support@oshocropcare.com'
 };

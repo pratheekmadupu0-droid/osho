@@ -22,7 +22,7 @@ export const CallToAction: React.FC<CallToActionProps> = ({ onNavigate }) => {
         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-md px-4 py-1 rounded-full">
           <Sprout className="w-4 h-4 text-amber-200" />
           <span className="text-xs font-bold uppercase tracking-widest text-amber-100">
-            PARTNER WITH PRINSTAN AGRI CARE
+            PARTNER WITH OSHO CROP CARE
           </span>
         </div>
 
